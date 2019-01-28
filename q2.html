@@ -1,0 +1,60 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>XenaEvents</title>
+    <meta charset = "UTF-8" />
+    <style type = "text/css">
+	.logo
+	{margin:0 auto;
+	 clear:both;
+	}
+	.logo img{
+	float:left;
+	margin-left : 400px;
+	width:40px;
+	height:40px;
+    }
+	.logo h1
+	{
+	position : relative;
+	
+	left: 10px;
+	color : red;
+	}
+	
+	
+	.form input{width : 200px;}
+	
+    </style>
+  </head>
+  <body>
+  <div class="logo">
+  <img src="logo.png" alt="logo" />
+  <h1>Xena<span style="color:blue";> Events</span></h1>
+  </div>
+  <h2 style="color: orange;">Hot <span style="color:black";>Balloon Riding <span style="font-size:16px; font-weight:normal">[Feb 28th 2017- Mar 4th 2017]</span></h2>
+  <div class="form">
+  <form action="xena.php">
+  </br>
+  <label>Name: </label></br>
+  <input type="text" name="Name" pattern="[a-zA-Z\s]+" required/>  
+   </br></br>
+  <label>Age: </label></br>
+  <input type="number" name="Age" required min="18" />
+  </br></br>
+  <label>Email Id: </label></br>
+  <input type="email" name="Email" required pattern="[a-zA-Z0-9\.\-_]+@[a-zA-Z]+\.[a-zA-Z]+$" /></br>
+  </br>
+  <label>City: </label></br>
+  <input type="text" list="city" required/>
+<datalist id="city">
+<option>Rajkot</option>
+<option>Vizag</option>
+<option>Bangalore</option>
+</datalist>  
+  </br></br>
+  <input type="submit" value="SUBMIT" style="width:70px;">
+  </form>
+  </div>
+  </body>
+  <html>

@@ -1,0 +1,60 @@
+<html lang = "en">
+  <head>
+    <title>Online Videos</title>
+    <meta charset = "UTF-8" />
+    <style type = "text/css">
+	
+	
+	.logo img{
+	float:left;
+	width:50px;
+	height:50px;
+    }
+	.logo h1
+	{
+	position : relative;
+	left: 10px;
+	color : red;
+	}
+</style>
+
+  </head>
+  <body>
+  <div class="mrow">
+  <section>
+  <div class="logo">
+  <img src="awesome.png" alt="logo" />
+  <h1>Awesome Online Videos</h1>
+  </div>
+  </section>
+  </br>
+  <section>
+  <video id="video1" width="600px">
+  <source src="aws.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+  </video>
+  </br>
+  <button onclick="play()">Play</button> 
+  <button onclick="pause()">Pause</button> 
+  </section>
+  </div>
+  
+  <script>
+var myVideo = document.getElementById("video1");
+function play(){
+if (myVideo.paused)
+ myVideo.play();
+ }
+function pause(){
+ myVideo.pause();
+ }
+ function playPause() { 
+    if (myVideo.paused) 
+        myVideo.play(); 
+    else 
+        myVideo.pause(); 
+} 
+
+</script>
+  </body>
+  </html>

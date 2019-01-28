@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>Stock Trading</title>
+    <meta charset = "UTF-8" />
+    <style type = "text/css">
+    table, td, th {
+      border: 1px solid black;
+    } 
+    </style>
+  </head>
+  <body>
+    <h1>Stock Trading App</h1>
+    <h2>Ticker And Price Table</h2>
+    <table>
+      <tr>
+        <th>Ticker</th>
+        <th>Price</th>
+      </tr>
+      <tr>
+        <td>WIPRO</td>
+        <td>298.45</td>
+        
+      </tr>
+      <tr>
+        <td>INFY</td>
+        <td>949.95</td>
+       
+      </tr>
+      <tr>
+        <td>TCS</td>
+        <td>2713.70</td>
+        
+      </tr>
+<tr>
+        <td>TECHM</td>
+        <td>485.85</td>
+        
+      </tr>
+    </table>
+<form action="/action_page.php">
+Ticker:<br>
+<input type="text" name="Ticker">
+<br>
+Quantity (between 10 to 100):<br>
+<input type="number" name="quantity" min="0" max="100" step="10" value="10">
+<br>
+<br>
+  <input type="submit" value="SUBMIT"	>
+</form>
+  </body>
+</html>

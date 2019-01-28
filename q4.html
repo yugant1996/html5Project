@@ -1,0 +1,33 @@
+<!DOCTYPE HTML>
+<html>
+<head> 
+<title>BCCI</title> 
+<script>
+window.onload = function () {
+var dps = [{x: 5, y: 40}, {x: 10, y: 75}, {x: 15, y: 140}];   //dataPoints. 
+ 
+var chart = new CanvasJS.Chart("chartContainer",{
+	title :{
+		text: "BCC Chat"
+	},
+	axisX: {						
+		title: "Over"
+	},
+	axisY: {						
+		title: "Runs"
+	},
+	data: [{
+		type: "line",
+		dataPoints : dps
+	}]
+});
+ 
+chart.render();
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 300px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html>
